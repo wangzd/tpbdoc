@@ -2,7 +2,7 @@
 % See the other sections (e.g. Context) for more normal chapter headings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Call it Front Matter in TOC, as it will include Glossary and auto-generated TOC, LOF.
-\chapter[Front Matter]{Executive Summary} 
+\chapter[Front Matter]{摘要} 
 \label{cha:front}
 \addcontentsline{toc}{section}{Executive Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -34,31 +34,45 @@ The remainder of this section is taken from \cite{Autodesk2008Fall}, a pretty go
 %%%%%%%%%%%%%%%%%%BEGIN EXAMPLE TEXT FOR THIS SECTION %%%%%%%%%%%%
 \section*{Example text}
 
-Engineers must work with distributed teammates around the world. More than ever, designers are tackling all stages of design with remote coworkers whom they may never actually meet face to face. Functioning in this distributed environment can be very challenging both technically and socially. While there are many great tools for managing data and capturing concepts, sharing the output of these tools between distant teammates requires thoughtful planning and continued effort to include distant coworkers during the meeting. Also, distributed team members often feel a sense of isolation - studies have shown that people will collaborate more with people in the same room than with their distributed coworkers who are calling in \cite{Milnethesis}. Developing a way to level the playing field for distributed designers is essential for ever achieving effective distributed design.
+% Engineers must work with distributed teammates around the world. More than ever, designers are tackling all stages of design with remote coworkers whom they may never actually meet face to face. Functioning in this distributed environment can be very challenging both technically and socially. While there are many great tools for managing data and capturing concepts, sharing the output of these tools between distant teammates requires thoughtful planning and continued effort to include distant coworkers during the meeting. Also, distributed team members often feel a sense of isolation - studies have shown that people will collaborate more with people in the same room than with their distributed coworkers who are calling in \cite{Milnethesis}. Developing a way to level the playing field for distributed designers is essential for ever achieving effective distributed design.
+
+在开放性较大的大学校园里，对环境陌生的人群往往需要一定的辅助来了解校园的设施、结构等信息。
 
 \begin{figure}[h]
-	\centering
-		\includegraphics[width=.75\textwidth]{Figures/Ch1frontmatter/execimage.pdf}
-	\caption{Common result of destributed design meetings}
-	\label{fig:executive}
+        \centering
+                \includegraphics[width=.75\textwidth]{Figures/Ch1frontmatter/execimage.pdf}
+        \caption{Common result of destributed design meetings}
+        \label{fig:executive}
 \end{figure}
 
- Autodesk has approached our team of 3 engineering students at Stanford University and 3 engineering students at Pontificia Universidad Javeriana to tackle this issue of how to get engineers to collaborate better. To gain an understanding of what makes great collaboration, we have surveyed existing collaboration technology, talked with designers, and run scenarios for different collaboration environments. We focused on solutions for the early stages of the design process between small, distributed teams. 
+ % Autodesk has approached our team of 3 engineering students at Stanford University and 3 engineering students at Pontificia Universidad Javeriana to tackle this issue of how to get engineers to collaborate better. To gain an understanding of what makes great collaboration, we have surveyed existing collaboration technology, talked with designers, and run scenarios for different collaboration environments. We focused on solutions for the early stages of the design process between small, distributed teams. 
 
-After researching a plethora of communication devices for sharing audio, displaying video and sharing drawings, we realized that the critical issue was not how to input drawings or video. The more pressing issues are how designers share the output of the tools and how to capture records of the information that is created. During the brainstorming phase, where ideas are generated quickly and randomly, finding a way to record a meaningful and accessible archive of concepts is especially difficult with existing collaboration tools.
+% After researching a plethora of communication devices for sharing audio, displaying video and sharing drawings, we realized that the critical issue was not how to input drawings or video. The more pressing issues are how designers share the output of the tools and how to capture records of the information that is created. During the brainstorming phase, where ideas are generated quickly and randomly, finding a way to record a meaningful and accessible archive of concepts is especially difficult with existing collaboration tools.
 
-Another important component of obtaining improved group collaboration is getting people to work together as a cohesive group, be it a distributed team or not. How do you deal with the coworker who keeps dominating the conversation? How do you get that quiet person to be more involved? No one is responding to my idea, don't they like it? The team has hypothesized that applying one of the key tenants of improvisational acting could assist with these social frustrations - have a moderator. Dialogue is critical to successful brainstorming, and can potentially be facilitated by objective feedback from a third person observer.
+% Another important component of obtaining improved group collaboration is getting people to work together as a cohesive group, be it a distributed team or not. How do you deal with the coworker who keeps dominating the conversation? How do you get that quiet person to be more involved? No one is responding to my idea, don't they like it? The team has hypothesized that applying one of the key tenants of improvisational acting could assist with these social frustrations - have a moderator. Dialogue is critical to successful brainstorming, and can potentially be facilitated by objective feedback from a third person observer.
 
-We also tested the ability of uncrowded channels to pass information without disturbing the flow of conversation. By prototyping a tactile feedback system, we found that it enabled a non-intrusive way to get someone's attention, and more importantly created a sensation of proximity with distributed teammates. 
+% We also tested the ability of uncrowded channels to pass information without disturbing the flow of conversation. By prototyping a tactile feedback system, we found that it enabled a non-intrusive way to get someone's attention, and more importantly created a sensation of proximity with distributed teammates. 
+
+就需求来讲，某个特定的场所可能有诸多的信息需要开放介绍，甚至需要对来访人员进行一定的导航、指引，而通过单一的静态信息可能无法达到较好的传递效果，以此为出发点，我们力图构建一个系统来改善诸如此类的信息展示功能。
+
+对于这种有效信息的获取，其渠道是多元化的，在远程呈现的应用可能下，我们可以将其作为一种获取方式进行设计。让身处远方的“参观者”能够“身临其境”的感受环境，也即通过实时远程传递音频、视频等信息，并且让使用者“自主”的去寻找他们感兴趣的信息。同时，这种功能不只是单向的，通过远程呈现的平台，可以实现两地的人员的实时交流、咨询，也即实现一定的“虚拟出席”的功能，用以辅助环境信息获取的效率。
+
+一个可以令人感兴趣的设计是一种集散控制的导航、参观系统。
+
+旨在某一建筑物中配置一套机群，其移动终端为可移动的并且具有网络传输功能的“远程呈现机器人”，其基本功能是代替参观者虚拟出席到特定环境中，并获取基本的环境信息，对于移动性的控制，一方面可以由非现场的参观者通过某一指标（比如一张平面图的点击）来安全的（操作上存在一定的必要限制）控制移动，另一方面可以由现场人员在移动终端上直接输入指令进行辅助控制，该辅助控制也可以通过前述的平面图点击来封装化的实现。
+
+这一套散布式机群的远程命令获取，是通过一台服务器的命令转发来实现的，用
+户通过网络与服务器建立连接，发送给定的指令，服务器负责将指令集中，转发
+到分散的特定的远程呈现机器人终端，这一设计便是集散式的系统分部。
 
 \begin{figure}[h]
-	\centering
-		\includegraphics[width=.75\textwidth]{Figures/Ch1frontmatter/execimage2.pdf}
-	\caption{Vision for a more effective distributed design meeting}
-	\label{fig:execimage2}
+        \centering
+                \includegraphics[width=.75\textwidth]{Figures/Ch1frontmatter/execimage2.pdf}
+        \caption{Vision for a more effective distributed design meeting}
+        \label{fig:execimage2}
 \end{figure}
 
-A vision for the final product is to better enable dialogue by displaying explicit teammate feedback and participation level visible to the team. Imagine knowing when someone wasn't paying attention, or that your teammate thought you were talking too much, or that everyone really thinks you're idea is pretty cool. All of this could be displayed without saying anything. Aside from simply providing a platform to share information, the system will monitor the quantity of inputs and determine individual participation level, and also offer the opportunity for direct feedback. The objective is to  provide a real-time answer to a common wonder -  what are my teammates really thinking?  
+% A vision for the final product is to better enable dialogue by displaying explicit teammate feedback and participation level visible to the team. Imagine knowing when someone wasn't paying attention, or that your teammate thought you were talking too much, or that everyone really thinks you're idea is pretty cool. All of this could be displayed without saying anything. Aside from simply providing a platform to share information, the system will monitor the quantity of inputs and determine individual participation level, and also offer the opportunity for direct feedback. The objective is to  provide a real-time answer to a common wonder -  what are my teammates really thinking?  
 
 %%%%%%%%%%%%%%%%%%END EXAMPLE TEXT FOR THIS SECTION %%%%%%%
 

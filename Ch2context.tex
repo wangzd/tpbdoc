@@ -1,5 +1,5 @@
 %Context
-\chapter{Context}
+\chapter{背景}
 \label{sec-context} %Label for cross-referencing
 
 %%%%%%%%%%%%
@@ -15,7 +15,7 @@ Suggested length: About half a page each for the Need Statement and Problem Stat
 \normalcolor \end{remark}
 %%%%%%%%%%%%
 
-\section{Need Statement}
+\section{需求陈述}
 \label{sec:need}
 
 %%%%%%%%%%%%
@@ -27,46 +27,68 @@ This section is the high-level result of your user need-finding. It defines the 
 \end{itemize}
 
 \noindent The remaining text is taken from \cite{Autodesk2008Fall}.
-\normalcolor \end{remark}
+\normalcolor
+\end{remark}
 %%%%%%%%%%%%
 
-The design world has changed dramatically in the last decade. The widespread advancement and usage of digital prototyping tools has made it simpler and faster to realize new ideas. At the same time, globalization is requiring designers from remote locations to combine their ideas and make design decisions. 
+% The design world has changed dramatically in the last decade. The widespread advancement and usage of digital prototyping tools has made it simpler and faster to realize new ideas. At the same time, globalization is requiring designers from remote locations to combine their ideas and make design decisions. 
 
-With the advancement of computational power and communication speed, digital prototyping tools have made it possible to transmit complex drawings around the world. Most digital tools that promote remote collaboration target the idea-to-conception stage of development. The early ideation stages of engineering design, however, are still more effective when discussed locally. The problems of effective communication and effective decision-making in this setting are still largely unsolved. Internet tools setup the virtual meeting space, yet communication is still not as effective as meeting in the same room. Often meeting participants cannot truly work together as they do face-to-face.
+% With the advancement of computational power and communication speed, digital prototyping tools have made it possible to transmit complex drawings around the world. Most digital tools that promote remote collaboration target the idea-to-conception stage of development. The early ideation stages of engineering design, however, are still more effective when discussed locally. The problems of effective communication and effective decision-making in this setting are still largely unsolved. Internet tools setup the virtual meeting space, yet communication is still not as effective as meeting in the same room. Often meeting participants cannot truly work together as they do face-to-face.
 
-Wouldn't it be perfect to have a new tool that focused on the interaction aspects of remote collaboration? A tool that made communication effortless, as if the participants were in the same room. Such a tool could increase the ideation potential of remote meetings and make remote brainstorming a reality. 
+% Wouldn't it be perfect to have a new tool that focused on the interaction aspects of remote collaboration? A tool that made communication effortless, as if the participants were in the same room. Such a tool could increase the ideation potential of remote meetings and make remote brainstorming a reality. 
 
+随着计算机、互联网技术的飞速发展，人与人、人与事物之间的联系日益密切，人们所接触的范围也逐渐广泛起来，于此同时，所需要的信息流量也会大大增加，传统的传递方式也许并不能很好的起到传递效果。如果让数字化介入其中，便会收获更好的结果。
 
-\section{Problem Statement}
+试想一下，当某一个机构或部门需要向外界介绍他们的相关信息，这些信息会给参观者留下非常重要的印象，如果诸如此类的信息能够具有实时性、全方位性，并且能够充分调动参观者的主观感受，那么这些信息的价值便会大大提升。
+
+通过远程呈现的基本构架，借助移动机器人提供的主观能动性，搭建如此的一个集散控制的参观导航系统，便会具有如上所述的极佳的效果。
+
+当你身处千里之外，通过简单的互联网界面，点击鼠标、敲击键盘，就可以达到参观目的地的效果，而且这种信息的获取是实时动态的，该是一件多么惬意的事情，你一定会对目标地点有一个非常好的主观印象。而且，你还可以随时与那里的工作人员等互动交流，岂不是更加便捷、实用！
+
+\section{问题陈述}
 \label{sec:problem}
 
 %%%%%%%%%%%%%%%
 \begin{remark} \color{blue}
 Here you get more specific about the particular problem that your design vision is addressing.
 The remaining text is again taken from \cite{Autodesk2008Fall},
-\normalcolor \end{remark}
+\normalcolor
+\end{remark}
 %%%%%%%%%%%%%%%
 
-In order to facilitate remote collaboration in the early design stage, we first break down the problem into the following three areas.
+%In order to facilitate remote collaboration in the early design stage, we first break down the problem into the following three areas.
+
+进一步分析目标，我们可以将过程中需要着重注意、解决的难题归纳总结，分成不同的项目部分，以备后续逐步实现预订功能。如下为分类：
 
 \begin{itemize} \tightlist
-\item Social Dynamics
-\item Communication tools
-\item Idea storage and decision making
+\item 网络连接搭建的方式
+
+\item 远程操作者的使用界面
+
+\item 机器人上显示界面
+
+\item 机器人的具体控制方式
+
 \end{itemize}
 
-Early ideation is a very social process and requires effective interperson communication. Current teleconferencing tools lack in recreating the level of social dynamics present in face-to-face communication.
+% Early ideation is a very social process and requires effective interperson communication. Current teleconferencing tools lack in recreating the level of social dynamics present in face-to-face communication.
 
-Communication tools are a means with which we transmit ideas to each other. This could be either through speaking, body language, or drawing. The early ideation stage requires a rapid exchange of ideas between all participants in a meeting. How can we utilize communication tools effectively to make such a dialog easier?
+% Communication tools are a means with which we transmit ideas to each other. This could be either through speaking, body language, or drawing. The early ideation stage requires a rapid exchange of ideas between all participants in a meeting. How can we utilize communication tools effectively to make such a dialog easier?
 
-Finally, the brainstorming stage presents a plethora of ideas that need to be archived and categorized for effective decision making. How can we make it easier for meeting participants to save their ideas and retrieve them later? How can information be viewed to facilitate decision making?
+% Finally, the brainstorming stage presents a plethora of ideas that need to be archived and categorized for effective decision making. How can we make it easier for meeting participants to save their ideas and retrieve them later? How can information be viewed to facilitate decision making?
 
-\section{Autodesk}
-Since 1982, Autodesk has delivered 2D and 3D visualization tools for clients in manufacturing and design. Some products include the drafting program AutoCAD, digital prototyping software Inventor, and 3D modeler Maya. The company focuses on enhancing the design process by allowing the customer to experience their design through software.
+对于网络搭建，由于之前的机器人必须通过附带的可执行文件来建立连接，而且ip地址是内网中的，这一限制对于我们所设想的系统有较大的限制，因此这一方式必须得到改进，使得连接建立简洁、可靠、广泛。
+
+对于界面的设定，由于跨平台的优势，应该是基于网页界面的设计，具体的功能模块后续的设计中会逐渐添加，进而集成到界面中，以达到符合用户使用需求的目标。
+
+机器人的控制方式也是一个非常重要的方面，他直接关系到了机器人的安全性等强制性的因素，而且对于用户体验也是至关重要的。
+
+% \section{Autodesk}
+% Since 1982, Autodesk has delivered 2D and 3D visualization tools for clients in manufacturing and design. Some products include the drafting program AutoCAD, digital prototyping software Inventor, and 3D modeler Maya. The company focuses on enhancing the design process by allowing the customer to experience their design through software.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{The Design Team}
+\section{组员介绍}
 \label{sec:team}
 
 %%%%%%%%%%%%%%%%%%%
@@ -80,56 +102,52 @@ Team \pmt, was assembled by the ME310 teaching staff, based on the outcome of My
 % Example table. It gets a caption and reference label.
 % The tabular formatting is a bit painful...  An alternative is to use Word
 % and insert the PDF printout as for a figure. There are also Word-to-Latex converters.
-\begin{table}
-  \begin{tabular}{| p{14mm} | p{20mm} | p{20mm} | p{22mm} | p{20mm} | p{12mm} |} 
-  \hline
-Score & Extroverted-Introverted (E-I) & Intuition-Sensing (N-S) & Feeling-Thinking (F-T) & Perception-Judging (P-J) & Overall \\
-People & & & & &\\
-\hline
-Eric & +6 & +6 & -6 & +12 & ENTP \\
-Azin & -18 & +30 & -30 & +18 & INTP \\
-Patrick & +6 & +18 & -18 & +6 & ENTP \\
-Salil & -18 & +30 & -30 & +18 & INTP \\
-\hline
-\end{tabular}
-\caption{Team preferences scores using the method of Wilde \cite{Wilde07}. }
-	\label{wildeprefs}  %Tag for referring to table
-\end{table}
+% \begin{table}
+%   \begin{tabular}{| p{14mm} | p{20mm} | p{20mm} | p{22mm} | p{20mm} | p{12mm} |} 
+%   \hline
+% Score & Extroverted-Introverted (E-I) & Intuition-Sensing (N-S) & Feeling-Thinking (F-T) & Perception-Judging (P-J) & Overall \\
+% People & & & & &\\
+% \hline
+% Eric & +6 & +6 & -6 & +12 & ENTP \\
+% Azin & -18 & +30 & -30 & +18 & INTP \\
+% Patrick & +6 & +18 & -18 & +6 & ENTP \\
+% Salil & -18 & +30 & -30 & +18 & INTP \\
+% \hline
+% \end{tabular}
+% \caption{Team preferences scores using the method of Wilde \cite{Wilde07}. }
+%         \label{wildeprefs}  %Tag for referring to table
+% \end{table}
+
+% \begin{framed}
+% \noindent \includegraphics[width=50mm]{Figures/Ch2/Scott}
+% \parbox[b]{0.6\textwidth}{Michael Scott\\
+% Status: M.E. Graduate Student\\
+% Contact: mscott@me310.stanford.edu\\
+% Skills: mechatronics, welding, CNC machining\\
+% Computing: Solid Works, Matlab, basic C programming, Flash, Dreamweaver\\
+% }
+
+% Born in Paris and raised in New Jersey, I attended Columbia University. For graduate school, I decided to trade in the hustle and bustle of New York City for the sunshine of Palo Alto, and so far I have not been disappointed (though New York will always be dear to my heart). My interests include mechatronics, design (including medical devices), football, tennis, pick-up games, tail-gating, Entourage, South Park.
+% \end{framed}
 
 \begin{framed}
-\noindent \includegraphics[width=50mm]{Figures/Ch2/Scott}
-\parbox[b]{0.6\textwidth}{Michael Scott\\
-Status: M.E. Graduate Student\\
-Contact: mscott@me310.stanford.edu\\
-Skills: mechatronics, welding, CNC machining\\
-Computing: Solid Works, Matlab, basic C programming, Flash, Dreamweaver\\
+\noindent \includegraphics[width=50mm]{Figures/context.pic.png}
+\parbox[b]{0.6\textwidth}{王照栋\\
+现况：中国科学技术大学，自动化系，10级本科生\\
+邮件：wangzd@mail.ustc.edu.cn\\
+技能：基础机械结构设计，自动控制\\
+编程：C语言编程，初步C++面向对象编程，matlab\\
 }
 
-Born in Paris and raised in New Jersey, I attended Columbia University. For graduate school, I decided to trade in the hustle and bustle of New York City for the sunshine of Palo Alto, and so far I have not been disappointed (though New York will always be dear to my heart). My interests include mechatronics, design (including medical devices), football, tennis, pick-up games, tail-gating, Entourage, South Park.
+来自山东，2010年考入中科大信息学院，后就读于自动化系。喜欢设计，并且具有一定的动手能力，2012年暑期与同学组队参加过Robogame机器人大赛，并最终获最佳技术奖单项奖。课余时间比较喜欢参与一些运动以及益智类的活动，热爱乒乓球、篮球、羽毛球、游泳等运动，对魔方速拧还原有一定的研究。
 \end{framed}
 
 \begin{framed}
-\noindent \includegraphics[width=50mm]{Figures/Ch2/PamBeesly}
-\parbox[b]{0.6\textwidth}{Pamela Beesly\\
-Status: M.E. Graduate Student\\
-Contact: beesly@me310.stanford.edu\\
-Skills: Oxy-acetylene welding, soldering, Lasercamm\\
-Computing: Solid Works, Matlab, Java, C++, InDesign, Photoshop\\
+\noindent
+\parbox[b]{0.6\textwidth}{贾肇聪\\
+现况：\\
+邮件：\\
 }
-
-I grew up in Connecticut, moved to Santa Monica, went to boarding school in New Hampshire. A few things that interest me specifically in design are human-computer interaction, tangible interfaces, usability and how people communicate with computers through interfaces. Outside activities I enjoy are being an editor for a design magazine, social dance, and traveling.
-\end{framed}
-
-\begin{framed}
-\noindent \includegraphics[width=50mm]{Figures/Ch2/Dwight}
-\parbox[b]{0.6\textwidth}{Dwight Schrute\\
-Status: M.E. Graduate Student\\
-Contact: deputy@me310.stanford.edu\\
-Skills: machining, welding, foreign languages\\
-Computing: Solid Works, Assembler, Pro/E, Mathematica\\
-}
-
-Born in San Diego and raised in Orange County, the ocean has never been far from me. I love all sorts of water activities including bodysurfing, surfing, swimming, and jumping off high objects. I love the outdoors too. I am a sheriff's deputy and expert marksman.\\
 \end{framed}
 
 %%%%%%%%%%%%%%%%%%MORE LATEX EXAMPLES%%%%%%%%%%%%%%

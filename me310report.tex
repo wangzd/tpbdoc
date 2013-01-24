@@ -1,38 +1,57 @@
-% ME310 Report Template -- Started 28 July 2006  Mark Cutkosky
-% Updated: 7Aug08 -LMS; 25Nov10 Mark Cutkosky
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % ME310 Report Template -- Started 28 July 2006  Mark Cutkosky
+% % Updated: 7Aug08 -LMS; 25Nov10 Mark Cutkosky
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Rename this file to whatever you like (e.g. OurFallDoc.tex) and modify the title, authors
-% etc. below. If you rename the section files (e.g. Ch2context.tex) you'll need to change
-% the \include{ } calls in this document as well.
+% % Rename this file to whatever you like (e.g. OurFallDoc.tex) and modify the title, authors
+% % etc. below. If you rename the section files (e.g. Ch2context.tex) you'll need to change
+% % the \include{ } calls in this document as well.
 
-%%%%%%%%%BEGIN DOCUMENT STYLE SETTINGS%%%%%%%%%%%
-% Don't modify this stuff unless you know what you're doing...
-% We are using the "memoir" class, a widely used set of macros book-like documents.
-% If you get errors that you are missing the "memoir" package you can download and 
-% install it:   http://www.ctan.org/tex-archive/macros/latex/contrib/memoir/
+% %%%%%%%%%BEGIN DOCUMENT STYLE SETTINGS%%%%%%%%%%%
+% % Don't modify this stuff unless you know what you're doing...
+% % We are using the "memoir" class, a widely used set of macros book-like documents.
+% % If you get errors that you are missing the "memoir" package you can download and 
+% % install it:   http://www.ctan.org/tex-archive/macros/latex/contrib/memoir/
 
-% memoir document class for standard USA letter paper, printed one side
+% % memoir document class for standard USA letter paper, printed one side
+% \documentclass[11pt,letterpaper,oneside]{memoir}
+% \chapterstyle{section}
+% \pagestyle{companion}
+% \usepackage{graphicx}        % standard LaTeX graphics 
+% \usepackage{color}              % support for colored fonts
+% \usepackage{url}  \urlstyle{same}     % deal with url strings in bibliography
+
+% \usepackage[pdftex,           %hyperlink cross references, etc.
+%     pdfsubject={ME310 Documentation},
+%     colorlinks={true},
+%     linkcolor={black},
+%     citecolor={blue},
+%     bookmarksopenlevel=1,
+% ]{hyperref}                             
+
+% %The file "me310.sty" should be in the same directory as this file.
+% % It contains formatting for page setup, titlepage, glossary, references, etc.
+% \usepackage{me310}           
+% %%%%%%%END DOCUMENT STYLE SETTINGS%%%%%%%%%%
+
 \documentclass[11pt,letterpaper,oneside]{memoir}
+
 \chapterstyle{section}
+
 \pagestyle{companion}
-\usepackage{graphicx}        % standard LaTeX graphics 
-\usepackage{color}              % support for colored fonts
-\usepackage{url}  \urlstyle{same}     % deal with url strings in bibliography
 
-\usepackage[pdftex,           %hyperlink cross references, etc.
-    pdfsubject={ME310 Documentation},
-    colorlinks={true},
-    linkcolor={black},
-    citecolor={blue},
-    bookmarksopenlevel=1,
-]{hyperref}				  
+\usepackage{xeCJK}
 
-%The file "me310.sty" should be in the same directory as this file.
-% It contains formatting for page setup, titlepage, glossary, references, etc.
-\usepackage{me310}           
-%%%%%%%END DOCUMENT STYLE SETTINGS%%%%%%%%%%
+\setCJKmainfont{AR PL SungtiL GB}
 
+\xeCJKsetup{CJKglue=\hspace{0pt plus .08 \baselineskip }}
+
+\usepackage{graphicx}
+
+\usepackage{color}
+
+\usepackage{url} \urlstyle{same}
+
+\usepackage{me310}
 
 %%%%%%%%%%BEGIN TITLE PAGE%%%%%%%%%%%%%%%%
 %Replace the strings below with what's right  for you.
@@ -41,12 +60,12 @@
 \title{An Interactive Appliance\\
 for Individual Well Being}
 
-%%Enter your team members' names here:	    
+%%Enter your team members' names here:      
     \author{Person One\\
     Person Two\\
     Person Three}
 
-\team{Our Team Name} 		% Insert your Team Project Name here.
+\team{Our Team Name}            % Insert your Team Project Name here.
 
 %% Insert Fall, Winter, Spring here:
 \quarter{Fall Design Document}
