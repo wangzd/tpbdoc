@@ -53,12 +53,25 @@
 
 \usepackage{me310}
 
+\usepackage[%pdftex,           %hyperlink cross references, etc.
+    xetex,
+    pdfsubject={ME310 Documentation},
+    colorlinks={true},
+    linkcolor={black},
+    citecolor={blue},
+    bookmarksopenlevel=1,
+]{hyperref}                             
+
 %%%%%%%%%%BEGIN TITLE PAGE%%%%%%%%%%%%%%%%
 %Replace the strings below with what's right  for you.
 
 %%Insert your Document Title here. Use \\ to force a newline.
-\title{An Interactive Appliance\\
-for Individual Well Being}
+
+%\title{An Interactive Appliance\\
+%for Individual Well Being}
+
+\title{分布式远程呈现机器人导航系统
+}
 
 %%Enter your team members' names here:      
     \author{Person One\\
@@ -87,8 +100,8 @@ for Individual Well Being}
 %Allow comments (remarks) to be shown or hidden.
 % Put optional text in \begin{remark} ... \end{remark}  environments.
 %The usage is a bit counterintuitive: \commentsoff makes them visible; \commentson hides them.
-%\commentson{remark} %Don't print remarks.
-\commentsoff{remark}  %Do print remarks. 
+\commentson{remark} %Don't print remarks.
+%\commentsoff{remark}  %Do print remarks. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
