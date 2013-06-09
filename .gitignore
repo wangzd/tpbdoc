@@ -3,3 +3,6 @@
 *.glo
 *.toc
 *~
+*.lof
+*.out
+me310report.pdf
