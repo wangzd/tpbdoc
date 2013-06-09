@@ -1,5 +1,5 @@
 %Context
-\chapter{背景}
+\chapter{背景介绍}
 \label{sec-context} %Label for cross-referencing
 
 %%%%%%%%%%%%
@@ -25,7 +25,6 @@ This section is the high-level result of your user need-finding. It defines the 
 \item Who wants or needs your product? Why do they want it? Or, what need does the product area address? 
 \item What evidence do you have to substantiate the need? Use citations or other evidence you've gathered.
 \end{itemize}
-
 \noindent The remaining text is taken from \cite{Autodesk2008Fall}.
 \normalcolor
 \end{remark}
@@ -65,9 +64,9 @@ The remaining text is again taken from \cite{Autodesk2008Fall},
 
 \item 远程操作者的使用界面
 
-\item 机器人上显示界面
+\item 机器人上的用户界面
 
-\item 机器人的具体控制方式
+\item 机器人的操控方式
 
 \end{itemize}
 
@@ -77,11 +76,14 @@ The remaining text is again taken from \cite{Autodesk2008Fall},
 
 % Finally, the brainstorming stage presents a plethora of ideas that need to be archived and categorized for effective decision making. How can we make it easier for meeting participants to save their ideas and retrieve them later? How can information be viewed to facilitate decision making?
 
-对于网络搭建，由于之前的机器人必须通过附带的可执行文件来建立连接，而且ip地址是内网中的，这一限制对于我们所设想的系统有较大的限制，因此这一方式必须得到改进，使得连接建立简洁、可靠、广泛。
+对于网络搭建，由于机器人可能部署在任意的网络环境中，因此不能对实现这套
+系统的网络有过高的要求与假设。我们的设计目标是部署在机器人上的客户端无
+需公网地址段的ip，也无需和使用者处于同一个子网内，只要机器人有一个无线
+网络连接，就可以正常工作。
 
-对于界面的设定，由于跨平台的优势，应该是基于网页界面的设计，具体的功能模块后续的设计中会逐渐添加，进而集成到界面中，以达到符合用户使用需求的目标。
+对于使用界面的设定，考虑到跨平台的潜在需求和移动互联网的趋势，应该采用基于网页界面的设计，具体的功能模块后续的设计中会逐渐添加，进而集成到界面中，以达到符合用户使用需求的目标。
 
-机器人的控制方式也是一个非常重要的方面，他直接关系到了机器人的安全性等强制性的因素，而且对于用户体验也是至关重要的。
+机器人的控制方式也是一个非常重要的方面，它直接关系到了机器人的安全性等强制性的因素，而且对于用户体验也是至关重要的。
 
 % \section{Autodesk}
 % Since 1982, Autodesk has delivered 2D and 3D visualization tools for clients in manufacturing and design. Some products include the drafting program AutoCAD, digital prototyping software Inventor, and 3D modeler Maya. The company focuses on enhancing the design process by allowing the customer to experience their design through software.
@@ -97,7 +99,7 @@ See other recent reports for other ways of introducing the team. To the extent t
 \end{remark} \normalcolor
 %%%%%%%%%%%%%%%%%%%
 
-Team \pmt, was assembled by the ME310 teaching staff, based on the outcome of Myers-Briggs personality tests (see Table \ref{wildeprefs}) and a desire to create teams with a diversity of interests and backgrounds. There is some evidence that such diversity enhances team creativity \cite{Wilde97} \cite{Wilde07}, even if it creates additional challenges for team management.
+% Team \pmt, was assembled by the ME310 teaching staff, based on the outcome of Myers-Briggs personality tests (see Table \ref{wildeprefs}) and a desire to create teams with a diversity of interests and backgrounds. There is some evidence that such diversity enhances team creativity \cite{Wilde97} \cite{Wilde07}, even if it creates additional challenges for team management.
 
 % Example table. It gets a caption and reference label.
 % The tabular formatting is a bit painful...  An alternative is to use Word
@@ -144,10 +146,11 @@ Team \pmt, was assembled by the ME310 teaching staff, based on the outcome of My
 
 \begin{framed}
 \noindent
-\parbox[b]{0.6\textwidth}{贾肇聪\\
-现况：\\
-邮件：\\
+%\parbox[b]{0.6\textwidth}
+{贾肇聪\\
+现况：中国科学技术大学10级少年班学院\\
 }
+自由软件爱好者，在本项目中负责linux服务器的管理和网络维护。
 \end{framed}
 
 %%%%%%%%%%%%%%%%%%MORE LATEX EXAMPLES%%%%%%%%%%%%%%
@@ -155,11 +158,11 @@ Team \pmt, was assembled by the ME310 teaching staff, based on the outcome of My
 % as they occur to you while incrementally working on the documentation.
 %See main file for notes about how to convert the ".glo" file to a glossary section.
 
-\glossary {paper weight}{ the combined weight of all paper products (paper, cardboard, crepe paper, paper tape) in the vehicle.}
-\glossary {non-paper weight}{ the combined weight of all non paper items (e.g. metal pins, teflon tape, screws). Non-paper weight is severely restricted in ME310 Paper Bike exercises.}
-\glossary {papier m\^{a}ch\`{e} }{a composition of shredded paper glued together with library paste}
-\glossary {particle board} {a product made of compressed wood chips and resin, often sold in 4 ft x 8 ft sheets. Particle board is not considered a paper product.}
-\glossary {sound deadener board} {a product made of compressed cardboard fibers and resin, often sold in 4 ft x 8 ft sheets. Sound deadener board is not considered a paper product.}
+% \glossary {paper weight}{ the combined weight of all paper products (paper, cardboard, crepe paper, paper tape) in the vehicle.}
+% \glossary {non-paper weight}{ the combined weight of all non paper items (e.g. metal pins, teflon tape, screws). Non-paper weight is severely restricted in ME310 Paper Bike exercises.}
+% \glossary {papier m\^{a}ch\`{e} }{a composition of shredded paper glued together with library paste}
+% \glossary {particle board} {a product made of compressed wood chips and resin, often sold in 4 ft x 8 ft sheets. Particle board is not considered a paper product.}
+% \glossary {sound deadener board} {a product made of compressed cardboard fibers and resin, often sold in 4 ft x 8 ft sheets. Sound deadener board is not considered a paper product.}
 
 \begin{remark} \color{blue}
 \section*{Experiments with tables in Latex}

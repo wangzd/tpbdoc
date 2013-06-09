@@ -1,4 +1,4 @@
-\chapter{Design Description}
+\chapter{设计描述}
 \label{design-description}
 
 \begin{remark}\color{blue}
@@ -7,8 +7,8 @@ The description section defines what the design is. If you find yourself adding 
 In the Fall quarter, the design will be in an early stage and this section is largely a proposal for what the design should be (you can call it that, explicitly). Even so, on the basis of preliminary need-finding, benchmarking and critical function evaluation, you have some idea of what is appropriate. Take a point of view and assert it. A CAD model or systems diagram of a concept may be appropriate.
 \normalcolor \end{remark}
 
-\section{Vision}
-\label{vision}
+\section{设计前景}
+\label{设计前景}
 
 \begin{remark}\color{blue}
 Use this section to describe your vision or proposal for what you think the design might be. Ideally you should have a sketch, a diagram or other images to help define it.
@@ -42,7 +42,7 @@ Use this section to describe your vision or proposal for what you think the desi
         \begin{center}
                 \includegraphics[width= \figwidth]{Figures/ch5.cfp.png}
         \end{center}
-        \caption[voltage divider]{A simple voltage dividing circuit provided 1.2V (HIGH) and 0.6V (LOW) buffered output voltages for the vibrating motor. Switches triggered the high and low voltages. }
+        \caption[机器人自由度]{机器人的行动自由度}
         \label{fig:tactile_circuit}  
 
 % \begin{figure}[bhtp] 
@@ -80,9 +80,11 @@ Use this section to describe your vision or proposal for what you think the desi
 \subsection{数据接口}
 
 %The participation moderator was created by using pre-made desktop software applications called widgets. The desktop was set to a white image, with personal spaces for each participant mapped off by a black boundary and labelled with the participant name. In each personal space, a unique Yahoo! Widgets timer was placed. Unique timer's were used to foster a sense of identity- when glancing at the moderator, the team members could instantly recognize their widget rather than look for their name. 
-视频传输，音频传输，控制指令采集、传输，反馈信息传输。
+包括视频传输，音频传输，控制指令采集、传输，反馈信息传输等方面。
 
-视频传输的实时性是主要方面，在网络有延迟的情况下，可以适当牺牲视频品质，确保流畅、实时的特点。
+视频传输的实时性是主要方面，在网络有延迟的情况下，可以适当牺牲视频品质，
+确保流畅、实时的特点。HTML5标准中的WebRTC特性十分符合这个要求。经过简
+单测试，发现通过WebRTC，浏览器可以实时地通过浏览器看到摄像头捕获的内容。
 
 音频传输与视频传输要保证一定的同步性。
 
@@ -92,18 +94,18 @@ Use this section to describe your vision or proposal for what you think the desi
 
 反馈信息是方便用户了解机器人的各项情况，用以辅助操作者进行相应处理。
 
-\begin{figure}[htbp]
-        \centering
-                \includegraphics[width=1.00\textwidth]{Figures/Ch5/moderator.pdf}
-        \caption{View of moderator display}
-        \label{fig:moderator}
-\end{figure}
+% \begin{figure}[htbp]
+%         \centering
+%                 \includegraphics[width=1.00\textwidth]{Figures/Ch5/moderator.pdf}
+%         \caption{View of moderator display}
+%         \label{fig:moderator}
+% \end{figure}
 
-\begin{center}
-\color{blue}
-(Text omitted for brevity)
-\normalcolor
-\end{center}
+% \begin{center}
+% \color{blue}
+% (Text omitted for brevity)
+% \normalcolor
+% \end{center}
 
 
 % Each was simply a countdown timer with a default starting time, $t_{s}$. As they begin counting down, the amount of time remaining is visible. By clicking twice on any widget, it would reset and begin counting down again from $t_{s}$. The timers were manually reset by one of the teammates during the meeting whenever someone had an interaction. When any timer runs out, it would sound an alarm, designating that the meeting come to a halt until the non-active team member contributes to the conversation. The hypothesis was that, because the timers were visible to the entire team, each member would consciously make an effort to speak before their timer ran out and that no timer would actually buzz, although the rotation of speakers would greatly increase.
@@ -124,6 +126,6 @@ Use this section to describe your vision or proposal for what you think the desi
 % The audio files were analyzed manually by playing back the audio recordings for each meeting and recording the length of each comment that every person made. Fifteen minutes of audio during the middle of each meeting was processed. The data are available in Appendix \ref{sec:Appendix1}. 
 
 
-不同的用户通过登录来进入实用界面，但是用户是广泛的，我们无法直接管理每个用户的操作，故应该采取一定的权限设置，不同的使用者应该具有不同的使用权限。
+不同的用户通过登录来进入使用界面，但是用户是广泛的，我们无法直接管理每个用户的操作，故应该采取一定的权限设置，不同的使用者应该具有不同的使用权限。
 
 比如我们完全信赖的人（我们的工作人员）能够直接操作机器人的各个基本功能，合法的用户不能直接控制机器人的底层移动，但是能够通过部分规定好的路线发出指令是机器人沿线行走，此种服务便会使用到之前陈述的可点击平面图的构想，同时，该类用户能够使用摄像头旋转、俯仰等没有涉及到机器人安全的器件的功能。而陌生的游客便只能通过接受视频等简单地信息来使用远程服务，而不能进行其他的使用操作，如此分级使得机器人的使用变得安全化、高效化。

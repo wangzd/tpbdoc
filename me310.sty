@@ -42,7 +42,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Set up printing of the title page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		
+                
 % \author, \title are defined in memoir; we are adding "quarter" and "team"
 
 %% Fall, Winter or Spring (or Paper Bicycle)
@@ -53,35 +53,37 @@
 
 
 \def\titlep{%
-	\thispagestyle{empty}%
-	\null
-	\begin{center}
-		\Huge\expandafter{\@title}
+        \thispagestyle{empty}%
+        \null
+        \begin{center}
+                \Huge\expandafter{\@title}
                   \vskip0.1in
-		\LARGE Mechanical Engineering 310 \expandafter{\@quarter}
-		
-	\end{center}
+                \LARGE Mechanical Engineering 310 \expandafter{\@quarter}
+                
+        \end{center}
 
 \vskip0.75in
 
 \begin{flushright}
-\Large Team \expandafter{\@team}
+\Large \expandafter{\@team}
 
 \@author
 
 \vskip0.75in
 \begin{large}
-Dept. of Mechanical Engineering\\
-Stanford University\\
-Stanford, CA 94305-4021\\
-http://me310.stanford.edu
-	
-\copyright \expandafter{\@date}
+%Dept. of Mechanical Engineering\\
+USTC\\
+%Stanford, CA 94305-4021\\
+http://www.ustc.edu.cn
+        
+\copyright CC-BY-SA\\
+Some Rights Reserved\\
+\expandafter{\@date}
 
 \end{large}
 \end{flushright}
-	
-	}
+        
+        }
 
 %Ask to make a Glossary file for the  \glossary{. . .} tags.
 \makeglossary

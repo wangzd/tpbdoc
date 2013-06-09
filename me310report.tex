@@ -33,7 +33,7 @@
 % \usepackage{me310}           
 % %%%%%%%END DOCUMENT STYLE SETTINGS%%%%%%%%%%
 
-\documentclass[11pt,letterpaper,oneside]{memoir}
+\documentclass[12pt,letterpaper,oneside]{memoir}
 
 \chapterstyle{section}
 
@@ -62,7 +62,12 @@
     bookmarksopenlevel=1,
 ]{hyperref}                             
 
+\usepackage{setspace}
+
+\linespread{1.5}
+
 %%%%%%%%%%BEGIN TITLE PAGE%%%%%%%%%%%%%%%%
+
 %Replace the strings below with what's right  for you.
 
 %%Insert your Document Title here. Use \\ to force a newline.
@@ -70,15 +75,14 @@
 %\title{An Interactive Appliance\\
 %for Individual Well Being}
 
-\title{分布式远程呈现机器人导航系统
-}
+\title{基于远程呈现机器人的\\
+在线校园参观系统}
 
 %%Enter your team members' names here:      
-    \author{Person One\\
-    Person Two\\
-    Person Three}
+    \author{王照栋\\
+    贾肇聪}
 
-\team{Our Team Name}            % Insert your Team Project Name here.
+\team{远程呈现机器人组}            % Insert your Team Project Name here.
 
 %% Insert Fall, Winter, Spring here:
 \quarter{Fall Design Document}
@@ -114,10 +118,10 @@
 %If making your own fancy coverpage (e.g. in Photoshop) then comment out 
 %the \includegraphics{ } and use the \vspace{ } command.
 \begin{figure}[t]
-\centering
-  %An example cover image, from 2008 ME310 Kodak project
-  \includegraphics[height= 7cm]{Figures/Ch1frontmatter/KodakThing.pdf}
-%\vspace{3 cm}    %Use this instead if you have no cover picture 
+% \centering
+%   %An example cover image, from 2008 ME310 Kodak project
+%   \includegraphics[height= 7cm]{Figures/cover.pdf}
+\vspace{3 cm}    %Use this instead if you have no cover picture 
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -156,8 +160,8 @@
 % There is also perl script I made which will do the formatting for you. 
 %  perl Glo2Tex OurFallDocument.glo > glossaryterms.tex
 \newpage
-\section*{Glossary}
-\addcontentsline{toc}{section}{Glossary}
+\section*{缩略词}
+\addcontentsline{toc}{section}{缩略词}
 \label{sec-glossary}
 \begin{description}
 \input{glossaryterms}   % input the list "glossaryterms.tex"
@@ -179,7 +183,7 @@ See comments in me310report.tex if you want to generate a glossary semi-automati
 \include{Ch2context} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{Ch3requirements}
+%\include{Ch3requirements}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include{Ch4development}
